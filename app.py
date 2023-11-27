@@ -27,7 +27,7 @@ class InferlessPythonModel:
         image = self.pipe(prompt).images[0]
         s3_client = boto3.client('s3', aws_access_key_id=AWS_ACCESS_KEY_ID , aws_secret_access_key=AWS_SECRET_ACCESS_KEY, region_name=REGION_NAME )
         buff = BytesIO()
-        bucket_name = 'BUCKET_NAME
+        bucket_name = BUCKET_NAME
         key_name = f'{uuid.uuid4()}.jpg'
         image.save(buff, format="JPEG")
         buff.seek(0)
