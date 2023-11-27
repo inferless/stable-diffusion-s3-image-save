@@ -1,4 +1,4 @@
-# Inpainting Stable Diffusion
+#  Stable Diffusion with S3 save
 In this template, we will be importing the stable-diffusion-2-1 on Inferless. and pushed the image to s3
 
 ---
