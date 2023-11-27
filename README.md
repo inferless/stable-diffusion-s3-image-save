@@ -51,8 +51,7 @@ The following is a sample Input and Output JSON for this model which you can use
       "shape": [
         1
       ],
-      "data": [
-"s3://infer-sample/image.jpg"
+      "data": [ "s3://infer-sample/image.jpg"
       ]
     }
   ]
@@ -73,26 +72,6 @@ curl --location '<your_inference_url>' \
                       "Face of a yellow cat, high resolution, sitting on a park bench"
                     ],
                     "name": "prompt",
-                    "shape": [
-                      1
-                    ],
-                    "datatype": "BYTES"
-                  },
-                  {
-                    "data": [
-                      "https://raw.githubusercontent.com/CompVis/latent-diffusion/main/data/inpainting_examples/overture-creations-5sI6fQgYIuo.png"
-                    ],
-                    "name": "image_url",
-                    "shape": [
-                      1
-                    ],
-                    "datatype": "BYTES"
-                  },
-                  {
-                    "data": [
-                      "https://raw.githubusercontent.com/CompVis/latent-diffusion/main/data/inpainting_examples/overture-creations-5sI6fQgYIuo_mask.png"
-                    ],
-                    "name": "mask_url",
                     "shape": [
                       1
                     ],
