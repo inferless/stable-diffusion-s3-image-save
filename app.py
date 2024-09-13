@@ -17,9 +17,7 @@ class InferlessPythonModel:
         self.pipe = StableDiffusionPipeline.from_pretrained(
             "stabilityai/stable-diffusion-2-1",
             use_safetensors=True,
-            torch_dtype=torch.float16,
-            device_map='auto'
-        )
+            torch_dtype=torch.float16).to("cuda")
 
 
     def infer(self, inputs):
