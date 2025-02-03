@@ -11,3 +11,4 @@ build:
     - "transformers==4.41.2"
     - "accelerate==0.30.1"
     - "boto3==1.35.18"
+    - "huggingface-hub==0.25.2"
