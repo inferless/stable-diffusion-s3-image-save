@@ -24,40 +24,6 @@ Select the PyTorch as framework and choose **Repo(custom code)** as your model s
 Enter all the required details to Import your model. Refer [this link](https://docs.inferless.com/integrations/github-custom-code) for more information on model import.
 
 The following is a sample Input and Output JSON for this model which you can use while importing this model on Inferless.
-
-### Input
-```json
-{
-  "inputs": [
-    {
-      "data": [
-        "Face of a yellow cat, high resolution, sitting on a park bench"
-      ],
-      "name": "prompt",
-      "shape": [
-        1
-      ],
-      "datatype": "BYTES"
-    }
-```
-
-### Output
-```json
-{
-  "outputs": [
-    {
-      "name": "generated_image_base64",
-      "datatype": "BYTES",
-      "shape": [
-        1
-      ],
-      "data": [ "s3://infer-sample/image.jpg"
-      ]
-    }
-  ]
-}
-```
-
 ---
 ## Curl Command
 Following is an example of the curl command you can use to make inference. You can find the exact curl command in the Model's API page in Inferless.
